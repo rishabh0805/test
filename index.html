@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Gulechha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f1f5f9; }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(135deg, #1e293b, #334155);
+      color: white;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    header h1 { font-size: 2.2rem; }
+    header p { font-size: 1rem; opacity: 0.85; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #1e293b;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #38bdf8; }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 880px;
+      margin: auto;
+    }
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 1.2rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #334155;
+      display: inline-block;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0f172a;
+      color: #94a3b8;
+    }
+    .socials a {
+      margin: 0 1rem;
+      color: #38bdf8;
+      font-size: 1.5rem;
+    }
+    .toggle-theme {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 0.8rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <button class="toggle-theme" onclick="document.body.classList.toggle('light')">
+    <i class="fas fa-adjust"></i>
+  </button>
+  <header data-aos="fade-down">
+    <img src="picture.jpg" alt="Rishabh Gulechha" />
+    <h1>Rishabh Gulechha</h1>
+    <p>Pune, India | rgulechha2105@gmail.com</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#connect">Connect</a>
+  </nav>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m an engineering student passionate about software development, automation, and real-world innovation. I enjoy learning new tech and building projects that solve everyday problems.</p>
+    </div>
+  </section>
+
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.Tech</strong> – Electrical, Electronics and Communications, MIT-WPU, Pune</p>
+      <p><strong>B.Sc</strong> – Computer Science, BITS Pilani</p>
+    </div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Google Cloud Fundamentals</li>
+        <li>Generative AI Arcade Game Lvl 3</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>RFID Door Tag System</strong>
+      <p>Built a door access system using RFID tags and a microcontroller to automate secure entry for authorized users.</p>
+    </div>
+  </section>
+
+  <section id="connect" data-aos="fade-up">
+    <h2>Connect With Me</h2>
+    <div class="card socials">
+      <a href="https://www.instagram.com/rishabh_gulechha2105/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/rishabh-gulechha-5395a9273/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Rishabh Gulechha
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <style>
+    body.light { background: #f9fafb; color: #1e293b; }
+    body.light header { background: #60a5fa; color: #1e293b; }
+    body.light nav { background: #e2e8f0; }
+    body.light nav a { color: #1e293b; }
+    body.light .card { background: #e5e7eb; color: #1e293b; }
+    body.light footer { background: #f1f5f9; color: #475569; }
+    body.light .toggle-theme { background: #60a5fa; color: #1e293b; }
+  </style>
+</body>
+</html>
